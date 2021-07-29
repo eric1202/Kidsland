@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct MathLearnView: View {
     @State var letter = "a"
     @State private var animationAmount: CGFloat = 1
     @State var taps = 0
     @State var color = Color.blue
+    let synthesizer = AVSpeechSynthesizer()
+
     var body: some View {
         VStack{
             Spacer()
@@ -37,9 +40,9 @@ struct MathLearnView: View {
         let redValue = CGFloat(drand48())
         let greenValue = CGFloat(drand48())
         let blueValue = CGFloat(drand48())
-            
+        
         let randomColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
-            
+        
         return randomColor
     }
     
@@ -58,6 +61,11 @@ struct MathLearnView: View {
         withAnimation(Animation.linear(duration: 1)) {
             taps += 1
         }
+        
+        let utterance = AVSpeechUtterance(string:letter)
+        utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        utterance.rate = 0.3
+        synthesizer.speak(utterance)
         
     }
 }

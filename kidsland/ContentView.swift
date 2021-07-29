@@ -62,7 +62,7 @@ struct ContentView: View {
     func view(index:Int)-> AnyView{
         switch index {
         case 1:
-            return AnyView(MathLearnView())
+            return AnyView(EngLearnView())
         case 4:
             return AnyView(MathLearnView())
         default:
