@@ -10,8 +10,11 @@ import SwiftUIX
 import AVFoundation
 import AudioToolbox
 
-
 struct ContentView: View {
+    
+    @State private var selection = 0
+    @State private var currentSong = Song(id: "", name: "", artistName: "", artworkURL: "", assetPath: "")
+    
     let synthesizer = AVSpeechSynthesizer()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -65,6 +68,8 @@ struct ContentView: View {
             return AnyView(EngLearnView())
         case 4:
             return AnyView(MathLearnView())
+        case 7:
+            return AnyView(PlayerView())
         default:
             return AnyView(Text("\(selectIndex) View"))
         }
@@ -92,6 +97,7 @@ struct ContentView: View {
             isShowingDetailView = true
         case 7:
             speak("儿歌学习")
+            isShowingDetailView = true
         case 8:
             speak("录音学习")
         case 9:

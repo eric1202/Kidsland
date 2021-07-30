@@ -16,6 +16,15 @@
 		3081927126B0FE990022DB17 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927026B0FE990022DB17 /* ScanView.swift */; };
 		3081927626B140E00022DB17 /* EngLearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927526B140E00022DB17 /* EngLearnView.swift */; };
 		3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927826B14E4D0022DB17 /* MathLearnView.swift */; };
+		30BFB45726B29A470072DB7F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB45326B29A460072DB7F /* PlayerView.swift */; };
+		30BFB45A26B29A470072DB7F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB45626B29A470072DB7F /* Song.swift */; };
+		30BFB46026B29B680072DB7F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */; };
+		30BFB46426B29B9E0072DB7F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */; };
+		30BFB46F26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46A26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 */; };
+		30BFB47026B39F3C0072DB7F /* 贝瓦儿歌mp3-036 If you are happy.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46B26B39F3C0072DB7F /* 贝瓦儿歌mp3-036 If you are happy.MP3 */; };
+		30BFB47126B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46C26B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 */; };
+		30BFB47226B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */; };
+		30BFB47326B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,14 @@
 		3081927026B0FE990022DB17 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		3081927526B140E00022DB17 /* EngLearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngLearnView.swift; sourceTree = "<group>"; };
 		3081927826B14E4D0022DB17 /* MathLearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLearnView.swift; sourceTree = "<group>"; };
+		30BFB45326B29A460072DB7F /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		30BFB45626B29A470072DB7F /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		30BFB46A26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-040 The Months.MP3"; sourceTree = "<group>"; };
+		30BFB46B26B39F3C0072DB7F /* 贝瓦儿歌mp3-036 If you are happy.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-036 If you are happy.MP3"; sourceTree = "<group>"; };
+		30BFB46C26B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-037 Pat a cake.MP3"; sourceTree = "<group>"; };
+		30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-038 Old MacDonald.MP3"; sourceTree = "<group>"; };
+		30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-039 Ring around the rosy.MP3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BFB46026B29B680072DB7F /* SDWebImageSwiftUI in Frameworks */,
 				3081926A26B0FB0D0022DB17 /* SwiftUIX in Frameworks */,
 				3081926E26B0FD300022DB17 /* CarBode in Frameworks */,
 			);
@@ -62,14 +80,15 @@
 		3081925726B0F3400022DB17 /* kidsland */ = {
 			isa = PBXGroup;
 			children = (
+				30BFB46926B39F3C0072DB7F /* Resource */,
+				30BFB46226B29B940072DB7F /* Utils */,
+				30BFB45C26B29A560072DB7F /* audio */,
 				3081925826B0F3400022DB17 /* kidslandApp.swift */,
 				3081925A26B0F3400022DB17 /* ContentView.swift */,
-				3081927026B0FE990022DB17 /* ScanView.swift */,
+				30BFB46626B29E240072DB7F /* Section */,
 				3081925C26B0F3420022DB17 /* Assets.xcassets */,
 				3081926126B0F3420022DB17 /* Info.plist */,
 				3081925E26B0F3420022DB17 /* Preview Content */,
-				3081927526B140E00022DB17 /* EngLearnView.swift */,
-				3081927826B14E4D0022DB17 /* MathLearnView.swift */,
 			);
 			path = kidsland;
 			sourceTree = "<group>";
@@ -80,6 +99,45 @@
 				3081925F26B0F3420022DB17 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30BFB45C26B29A560072DB7F /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				30BFB45326B29A460072DB7F /* PlayerView.swift */,
+				30BFB45626B29A470072DB7F /* Song.swift */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		30BFB46226B29B940072DB7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30BFB46626B29E240072DB7F /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				3081927026B0FE990022DB17 /* ScanView.swift */,
+				3081927526B140E00022DB17 /* EngLearnView.swift */,
+				3081927826B14E4D0022DB17 /* MathLearnView.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		30BFB46926B39F3C0072DB7F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				30BFB46A26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 */,
+				30BFB46B26B39F3C0072DB7F /* 贝瓦儿歌mp3-036 If you are happy.MP3 */,
+				30BFB46C26B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 */,
+				30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */,
+				30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +159,7 @@
 			packageProductDependencies = (
 				3081926926B0FB0D0022DB17 /* SwiftUIX */,
 				3081926D26B0FD300022DB17 /* CarBode */,
+				30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */,
 			);
 			productName = kidsland;
 			productReference = 3081925526B0F3400022DB17 /* kidsland.app */;
@@ -132,6 +191,7 @@
 			packageReferences = (
 				3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				3081926C26B0FD300022DB17 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				30BFB45E26B29B680072DB7F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 3081925626B0F3400022DB17 /* Products */;
 			projectDirPath = "";
@@ -147,8 +207,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BFB47026B39F3C0072DB7F /* 贝瓦儿歌mp3-036 If you are happy.MP3 in Resources */,
 				3081926026B0F3420022DB17 /* Preview Assets.xcassets in Resources */,
 				3081925D26B0F3420022DB17 /* Assets.xcassets in Resources */,
+				30BFB47226B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 in Resources */,
+				30BFB47126B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 in Resources */,
+				30BFB46F26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 in Resources */,
+				30BFB47326B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BFB45A26B29A470072DB7F /* Song.swift in Sources */,
 				3081927626B140E00022DB17 /* EngLearnView.swift in Sources */,
 				3081925B26B0F3400022DB17 /* ContentView.swift in Sources */,
+				30BFB46426B29B9E0072DB7F /* SwiftyJSON.swift in Sources */,
 				3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */,
+				30BFB45726B29A470072DB7F /* PlayerView.swift in Sources */,
 				3081925926B0F3400022DB17 /* kidslandApp.swift in Sources */,
 				3081927126B0FE990022DB17 /* ScanView.swift in Sources */,
 			);
@@ -370,6 +438,14 @@
 				minimumVersion = 2.2.2;
 			};
 		};
+		30BFB45E26B29B680072DB7F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -382,6 +458,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3081926C26B0FD300022DB17 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
 			productName = CarBode;
+		};
+		30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30BFB45E26B29B680072DB7F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

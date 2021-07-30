@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct MathLearnView: View {
-    @State var letter = "a"
+    @State var letter = "6"
     @State private var animationAmount: CGFloat = 1
     @State var taps = 0
     @State var color = Color.blue
@@ -32,7 +32,7 @@ struct MathLearnView: View {
             Spacer()
             
         }.onAppear{
-            change()
+//            change()
         }
     }
     

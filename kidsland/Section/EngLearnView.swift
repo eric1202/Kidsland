@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct EngLearnView: View {
-    @State var letter = "a"
+    @State var letter = "w"
     @State private var animationAmount: CGFloat = 1
     @State var taps = 0
     @State var color = Color.blue
@@ -32,7 +32,7 @@ struct EngLearnView: View {
             Spacer()
             
         }.onAppear{
-            change()
+//            change()
         }
     }
     
@@ -64,7 +64,7 @@ struct EngLearnView: View {
         
         let utterance = AVSpeechUtterance(string:letter)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 0.2
+        utterance.rate = 0.4
         synthesizer.speak(utterance)
         
         
