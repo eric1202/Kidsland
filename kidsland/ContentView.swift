@@ -50,9 +50,12 @@ struct ContentView: View {
                             }
                     }
                 }
-            }.padding(2).sheet(isPresented: $showingSheet) {
+            }
+            .padding(2).sheet(isPresented: $showingSheet) {
                 ScanView()
-            }.navigationBarTitle(timeString)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .navigationBarTitle(timeString)
             
         }
         })
@@ -62,16 +65,20 @@ struct ContentView: View {
             timeString = formatter.string(from: Date())
         }
     }
-    func view(index:Int)-> AnyView{
+    
+    @ViewBuilder
+    func view(index:Int)-> some View{
         switch index {
         case 1:
-            return AnyView(EngLearnView())
+            EngLearnView()
         case 4:
-            return AnyView(MathLearnView())
+            MathLearnView()
         case 7:
-            return AnyView(PlayerView())
+            PlayerView()
+        case 10:
+            McdView()
         default:
-            return AnyView(Text("\(selectIndex) View"))
+            Text("\(selectIndex) View")
         }
     }
     func click(index:Int){
@@ -94,14 +101,20 @@ struct ContentView: View {
             speak("电脑学习")
         case 6:
             speak("古诗学习")
-            isShowingDetailView = true
+//            isShowingDetailView = true
         case 7:
             speak("儿歌学习")
             isShowingDetailView = true
         case 8:
             speak("录音学习")
         case 9:
-            speak("儿歌学习")
+
+            let play = try! AVAudioPlayer(contentsOf: Bundle.main.url(forResource: "familymart", withExtension: "mp3")!)
+            audioPlayer = play
+//            audioPlayer.numberOfLoops =
+            audioPlayer.play()
+        case 10:
+            isShowingDetailView = true
         default:
             print(index)
             speak("还没开发好")
