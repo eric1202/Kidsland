@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct McdView: View {
     @State var isDetectingLongPress = false
     private var columnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     @State private var imgs = [UIImage(named:"mcd-logo.jpg")]
     @State var img = UIImage(named:"mcd-logo.jpg")
+    @State var products = [JSON()]
+
     var body: some View {
         GeometryReader(content: { geometry in
             ZStack{
@@ -25,8 +28,12 @@ struct McdView: View {
                             LazyVGrid(columns: columnGrid,spacing:2) {
                                 ForEach((0...imgs.count-1), id: \.self) {
                                     let index = $0
+                                    let imgUrl = products[ index < products.count ? index : 0]["img"].stringValue
+
+                                    let _ = print("\(imgUrl) \n")
                                     VStack(spacing:0){
-                                        Text("\(index)").font(.largeTitle)
+//                                        Text("\( index >= products.count ? "index" : products[index]["productName"].stringValue)").font(.largeTitle)
+                                        KFImage(URL(string: imgUrl))
                                         Image(uiImage:imgs[index]!)
                                             .resizable()
                                             .aspectRatio(contentMode: .fit)
@@ -47,6 +54,9 @@ struct McdView: View {
                             imgs = getFiles().first!.map({ (name) -> UIImage in
                                 return UIImage(named: name)!
                             })
+                            let arr = getProducts()
+                            let datas = arr.first!["products"].arrayValue
+                            products = datas
                         }
                     }.padding()
                 }
@@ -58,6 +68,20 @@ struct McdView: View {
             }.ignoresSafeArea()
         })
         
+    }
+    
+    func getProducts() -> [JSON] {
+        let path = Bundle.main.path(forResource: "mdl", ofType: "json")!
+        let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
+        let json = JSON(parseJSON: jsonString!)
+        
+//        let decoder = JSONDecoder()
+//
+//        if let jsonPetitions = try? decoder.decode(ProductSection.self, from: json["data"].rawData()) {
+//            return jsonPetitions.products
+//            }
+        
+        return json["data"].arrayValue
     }
     
     func getFiles() -> [[String]] {
@@ -95,6 +119,14 @@ struct ImagePreview : View {
                 .onTapGesture {
                     tap.toggle()
                 }
+                .onSwipeDown {
+                    tap = false
+                }
+                .onSwipeUp {
+                    tap = false
+
+                }
+
         }
         .padding(8)
         .background(Color.white)

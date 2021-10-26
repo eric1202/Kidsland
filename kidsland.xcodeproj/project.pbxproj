@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3050199426C9FB7F00C58010 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050199326C9FB7F00C58010 /* ImagePickerView.swift */; };
+		30584BF426C39CD50025A772 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF326C39CD50025A772 /* WidgetKit.framework */; };
+		30584BF626C39CD50025A772 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF526C39CD50025A772 /* SwiftUI.framework */; };
+		30584BF926C39CD50025A772 /* HealthQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30584BF826C39CD50025A772 /* HealthQR.swift */; };
+		30584BFC26C39CD60025A772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30584BFB26C39CD60025A772 /* Assets.xcassets */; };
+		30584BFE26C39CD60025A772 /* HealthQR.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 30584BFA26C39CD50025A772 /* HealthQR.intentdefinition */; };
+		30584BFF26C39CD60025A772 /* HealthQR.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 30584BFA26C39CD50025A772 /* HealthQR.intentdefinition */; };
+		30584C0226C39CD60025A772 /* HealthQRExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30584BF126C39CD50025A772 /* HealthQRExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		30584C0826C3B0EE0025A772 /* HealthImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30584C0726C3B0EE0025A772 /* HealthImageView.swift */; };
+		30584C0A26C3B1E60025A772 /* 701628666462_.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30584C0926C3B1E60025A772 /* 701628666462_.pic.jpg */; };
 		306190DD26BB707100140D41 /* familymart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 306190DC26BB707100140D41 /* familymart.mp3 */; };
 		306190E026BB744800140D41 /* 1.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 306190DF26BB744800140D41 /* 1.MP3 */; };
 		306191C226BB974400140D41 /* 202104261601293757.png in Resources */ = {isa = PBXBuildFile; fileRef = 3061910726BB973E00140D41 /* 202104261601293757.png */; };
@@ -107,6 +117,12 @@
 		3061925626BB974500140D41 /* 201709091945021754.png in Resources */ = {isa = PBXBuildFile; fileRef = 306191A026BB974400140D41 /* 201709091945021754.png */; };
 		3061926026BBB16400140D41 /* McdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061925F26BBB16400140D41 /* McdView.swift */; };
 		3061926426BBC75B00140D41 /* hanbao.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3061926326BBC75B00140D41 /* hanbao.bundle */; };
+		3061926826BBE59900140D41 /* mdl.json in Resources */ = {isa = PBXBuildFile; fileRef = 3061926726BBE59900140D41 /* mdl.json */; };
+		3061926F26BBE6DF00140D41 /* ProductSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926B26BBE6DF00140D41 /* ProductSection.swift */; };
+		3061927026BBE6DF00140D41 /* JSONSchemaSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926C26BBE6DF00140D41 /* JSONSchemaSupport.swift */; };
+		3061927126BBE6DF00140D41 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926D26BBE6DF00140D41 /* Specification.swift */; };
+		3061927226BBE6DF00140D41 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926E26BBE6DF00140D41 /* Product.swift */; };
+		3061927826BCE02F00140D41 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3061927726BCE02F00140D41 /* Kingfisher */; };
 		3081925926B0F3400022DB17 /* kidslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081925826B0F3400022DB17 /* kidslandApp.swift */; };
 		3081925B26B0F3400022DB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081925A26B0F3400022DB17 /* ContentView.swift */; };
 		3081925D26B0F3420022DB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081925C26B0F3420022DB17 /* Assets.xcassets */; };
@@ -116,6 +132,8 @@
 		3081927126B0FE990022DB17 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927026B0FE990022DB17 /* ScanView.swift */; };
 		3081927626B140E00022DB17 /* EngLearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927526B140E00022DB17 /* EngLearnView.swift */; };
 		3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927826B14E4D0022DB17 /* MathLearnView.swift */; };
+		309C3F6526DF4ADA00F65F4A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309C3F6426DF4ADA00F65F4A /* NetworkExtension.framework */; };
+		309C3F6726DF4DF000F65F4A /* WIFIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309C3F6626DF4DF000F65F4A /* WIFIHelper.swift */; };
 		30BFB45726B29A470072DB7F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB45326B29A460072DB7F /* PlayerView.swift */; };
 		30BFB45A26B29A470072DB7F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB45626B29A470072DB7F /* Song.swift */; };
 		30BFB46026B29B680072DB7F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */; };
@@ -127,7 +145,41 @@
 		30BFB47326B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		30584C0026C39CD60025A772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3081924D26B0F3400022DB17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30584BF026C39CD50025A772;
+			remoteInfo = HealthQRExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30584C0326C39CD60025A772 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				30584C0226C39CD60025A772 /* HealthQRExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3050199326C9FB7F00C58010 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		30584BF126C39CD50025A772 /* HealthQRExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HealthQRExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		30584BF326C39CD50025A772 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		30584BF526C39CD50025A772 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		30584BF826C39CD50025A772 /* HealthQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQR.swift; sourceTree = "<group>"; };
+		30584BFA26C39CD50025A772 /* HealthQR.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HealthQR.intentdefinition; sourceTree = "<group>"; };
+		30584BFB26C39CD60025A772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30584BFD26C39CD60025A772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30584C0726C3B0EE0025A772 /* HealthImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthImageView.swift; sourceTree = "<group>"; };
+		30584C0926C3B1E60025A772 /* 701628666462_.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 701628666462_.pic.jpg; sourceTree = "<group>"; };
 		306190DC26BB707100140D41 /* familymart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = familymart.mp3; sourceTree = "<group>"; };
 		306190DF26BB744800140D41 /* 1.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.MP3; sourceTree = "<group>"; };
 		3061910726BB973E00140D41 /* 202104261601293757.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 202104261601293757.png; sourceTree = "<group>"; };
@@ -228,6 +280,11 @@
 		306191A026BB974400140D41 /* 201709091945021754.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201709091945021754.png; sourceTree = "<group>"; };
 		3061925F26BBB16400140D41 /* McdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McdView.swift; sourceTree = "<group>"; };
 		3061926326BBC75B00140D41 /* hanbao.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = hanbao.bundle; sourceTree = "<group>"; };
+		3061926726BBE59900140D41 /* mdl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mdl.json; sourceTree = "<group>"; };
+		3061926B26BBE6DF00140D41 /* ProductSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSection.swift; sourceTree = "<group>"; };
+		3061926C26BBE6DF00140D41 /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
+		3061926D26BBE6DF00140D41 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		3061926E26BBE6DF00140D41 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3081925526B0F3400022DB17 /* kidsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081925826B0F3400022DB17 /* kidslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidslandApp.swift; sourceTree = "<group>"; };
 		3081925A26B0F3400022DB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -237,6 +294,9 @@
 		3081927026B0FE990022DB17 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		3081927526B140E00022DB17 /* EngLearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngLearnView.swift; sourceTree = "<group>"; };
 		3081927826B14E4D0022DB17 /* MathLearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLearnView.swift; sourceTree = "<group>"; };
+		309C3F6326DF4ADA00F65F4A /* kidsland.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kidsland.entitlements; sourceTree = "<group>"; };
+		309C3F6426DF4ADA00F65F4A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		309C3F6626DF4DF000F65F4A /* WIFIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIHelper.swift; sourceTree = "<group>"; };
 		30BFB45326B29A460072DB7F /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		30BFB45626B29A470072DB7F /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -248,10 +308,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		30584BEE26C39CD50025A772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30584BF626C39CD50025A772 /* SwiftUI.framework in Frameworks */,
+				30584BF426C39CD50025A772 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3081925226B0F3400022DB17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309C3F6526DF4ADA00F65F4A /* NetworkExtension.framework in Frameworks */,
+				3061927826BCE02F00140D41 /* Kingfisher in Frameworks */,
 				30BFB46026B29B680072DB7F /* SDWebImageSwiftUI in Frameworks */,
 				3081926A26B0FB0D0022DB17 /* SwiftUIX in Frameworks */,
 				3081926E26B0FD300022DB17 /* CarBode in Frameworks */,
@@ -261,6 +332,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30584BF226C39CD50025A772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309C3F6426DF4ADA00F65F4A /* NetworkExtension.framework */,
+				30584BF326C39CD50025A772 /* WidgetKit.framework */,
+				30584BF526C39CD50025A772 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30584BF726C39CD50025A772 /* HealthQR */ = {
+			isa = PBXGroup;
+			children = (
+				30584BF826C39CD50025A772 /* HealthQR.swift */,
+				30584BFA26C39CD50025A772 /* HealthQR.intentdefinition */,
+				30584BFB26C39CD60025A772 /* Assets.xcassets */,
+				30584BFD26C39CD60025A772 /* Info.plist */,
+			);
+			path = HealthQR;
+			sourceTree = "<group>";
+		};
 		3061910626BB973E00140D41 /* 汉堡 _ 麦当劳官网 */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,10 +489,23 @@
 			path = "开心乐园餐 _ 麦当劳官网";
 			sourceTree = "<group>";
 		};
+		3061926A26BBE6DF00140D41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3061926B26BBE6DF00140D41 /* ProductSection.swift */,
+				3061926C26BBE6DF00140D41 /* JSONSchemaSupport.swift */,
+				3061926D26BBE6DF00140D41 /* Specification.swift */,
+				3061926E26BBE6DF00140D41 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3081924C26B0F3400022DB17 = {
 			isa = PBXGroup;
 			children = (
 				3081925726B0F3400022DB17 /* kidsland */,
+				30584BF726C39CD50025A772 /* HealthQR */,
+				30584BF226C39CD50025A772 /* Frameworks */,
 				3081925626B0F3400022DB17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -409,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				3081925526B0F3400022DB17 /* kidsland.app */,
+				30584BF126C39CD50025A772 /* HealthQRExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -416,6 +522,8 @@
 		3081925726B0F3400022DB17 /* kidsland */ = {
 			isa = PBXGroup;
 			children = (
+				309C3F6326DF4ADA00F65F4A /* kidsland.entitlements */,
+				3061926A26BBE6DF00140D41 /* Model */,
 				30BFB46926B39F3C0072DB7F /* Resources */,
 				30BFB46226B29B940072DB7F /* Utils */,
 				30BFB45C26B29A560072DB7F /* audio */,
@@ -450,6 +558,8 @@
 			isa = PBXGroup;
 			children = (
 				30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */,
+				3050199326C9FB7F00C58010 /* ImagePickerView.swift */,
+				309C3F6626DF4DF000F65F4A /* WIFIHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -461,6 +571,7 @@
 				3081927526B140E00022DB17 /* EngLearnView.swift */,
 				3081927826B14E4D0022DB17 /* MathLearnView.swift */,
 				3061925F26BBB16400140D41 /* McdView.swift */,
+				30584C0726C3B0EE0025A772 /* HealthImageView.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -468,6 +579,7 @@
 		30BFB46926B39F3C0072DB7F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				30584C0926C3B1E60025A772 /* 701628666462_.pic.jpg */,
 				3061910626BB973E00140D41 /* 汉堡 _ 麦当劳官网 */,
 				3061919626BB974400140D41 /* 开心乐园餐 _ 麦当劳官网 */,
 				3061917D26BB974300140D41 /* 甜品 _ 麦当劳官网 */,
@@ -484,6 +596,7 @@
 				30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */,
 				30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */,
 				3061926326BBC75B00140D41 /* hanbao.bundle */,
+				3061926726BBE59900140D41 /* mdl.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -491,6 +604,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		30584BF026C39CD50025A772 /* HealthQRExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30584C0626C39CD60025A772 /* Build configuration list for PBXNativeTarget "HealthQRExtension" */;
+			buildPhases = (
+				30584BED26C39CD50025A772 /* Sources */,
+				30584BEE26C39CD50025A772 /* Frameworks */,
+				30584BEF26C39CD50025A772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthQRExtension;
+			productName = HealthQRExtension;
+			productReference = 30584BF126C39CD50025A772 /* HealthQRExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3081925426B0F3400022DB17 /* kidsland */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3081926426B0F3420022DB17 /* Build configuration list for PBXNativeTarget "kidsland" */;
@@ -498,16 +628,19 @@
 				3081925126B0F3400022DB17 /* Sources */,
 				3081925226B0F3400022DB17 /* Frameworks */,
 				3081925326B0F3400022DB17 /* Resources */,
+				30584C0326C39CD60025A772 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30584C0126C39CD60025A772 /* PBXTargetDependency */,
 			);
 			name = kidsland;
 			packageProductDependencies = (
 				3081926926B0FB0D0022DB17 /* SwiftUIX */,
 				3081926D26B0FD300022DB17 /* CarBode */,
 				30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */,
+				3061927726BCE02F00140D41 /* Kingfisher */,
 			);
 			productName = kidsland;
 			productReference = 3081925526B0F3400022DB17 /* kidsland.app */;
@@ -519,9 +652,12 @@
 		3081924D26B0F3400022DB17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					30584BF026C39CD50025A772 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					3081925426B0F3400022DB17 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -540,17 +676,27 @@
 				3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				3081926C26B0FD300022DB17 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 				30BFB45E26B29B680072DB7F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				3061927626BCE02F00140D41 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3081925626B0F3400022DB17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3081925426B0F3400022DB17 /* kidsland */,
+				30584BF026C39CD50025A772 /* HealthQRExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		30584BEF26C39CD50025A772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30584BFC26C39CD60025A772 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3081925326B0F3400022DB17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -650,6 +796,7 @@
 				306191CD26BB974500140D41 /* 202104251155083442.png in Resources */,
 				3061920E26BB974500140D41 /* 202005270940331482.png in Resources */,
 				306191D626BB974500140D41 /* 202104191433067178.png in Resources */,
+				30584C0A26C3B1E60025A772 /* 701628666462_.pic.jpg in Resources */,
 				30BFB46F26B39F3C0072DB7F /* 贝瓦儿歌mp3-040 The Months.MP3 in Resources */,
 				306191FB26BB974500140D41 /* 201709081713313851.png in Resources */,
 				306191C226BB974400140D41 /* 202104261601293757.png in Resources */,
@@ -657,6 +804,7 @@
 				306191E326BB974500140D41 /* 201709121712579051.png in Resources */,
 				306191FE26BB974500140D41 /* 202005061031176823.png in Resources */,
 				3061921626BB974500140D41 /* 202006171817102529.png in Resources */,
+				3061926826BBE59900140D41 /* mdl.json in Resources */,
 				306191FA26BB974500140D41 /* 202104191500563514.png in Resources */,
 				3061920C26BB974500140D41 /* 202008121131147367.png in Resources */,
 				306191F426BB974500140D41 /* 201511061654225468.png in Resources */,
@@ -667,25 +815,94 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30584BED26C39CD50025A772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30584BF926C39CD50025A772 /* HealthQR.swift in Sources */,
+				30584BFE26C39CD60025A772 /* HealthQR.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3081925126B0F3400022DB17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				30BFB45A26B29A470072DB7F /* Song.swift in Sources */,
 				3081927626B140E00022DB17 /* EngLearnView.swift in Sources */,
+				30584C0826C3B0EE0025A772 /* HealthImageView.swift in Sources */,
 				3081925B26B0F3400022DB17 /* ContentView.swift in Sources */,
+				3061927126BBE6DF00140D41 /* Specification.swift in Sources */,
 				30BFB46426B29B9E0072DB7F /* SwiftyJSON.swift in Sources */,
 				3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */,
+				3061927026BBE6DF00140D41 /* JSONSchemaSupport.swift in Sources */,
 				30BFB45726B29A470072DB7F /* PlayerView.swift in Sources */,
+				3061926F26BBE6DF00140D41 /* ProductSection.swift in Sources */,
 				3081925926B0F3400022DB17 /* kidslandApp.swift in Sources */,
+				309C3F6726DF4DF000F65F4A /* WIFIHelper.swift in Sources */,
 				3081927126B0FE990022DB17 /* ScanView.swift in Sources */,
+				3050199426C9FB7F00C58010 /* ImagePickerView.swift in Sources */,
 				3061926026BBB16400140D41 /* McdView.swift in Sources */,
+				3061927226BBE6DF00140D41 /* Product.swift in Sources */,
+				30584BFF26C39CD60025A772 /* HealthQR.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		30584C0126C39CD60025A772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30584BF026C39CD50025A772 /* HealthQRExtension */;
+			targetProxy = 30584C0026C39CD60025A772 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		30584C0426C39CD60025A772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				INFOPLIST_FILE = HealthQR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland.HealthQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30584C0526C39CD60025A772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				INFOPLIST_FILE = HealthQR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland.HealthQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		3081926226B0F3420022DB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -805,8 +1022,10 @@
 		3081926526B0F3420022DB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kidsland/kidsland.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kidsland/Preview Content\"";
 				DEVELOPMENT_TEAM = G4N8HPK6QU;
@@ -827,8 +1046,10 @@
 		3081926626B0F3420022DB17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kidsland/kidsland.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kidsland/Preview Content\"";
 				DEVELOPMENT_TEAM = G4N8HPK6QU;
@@ -849,6 +1070,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		30584C0626C39CD60025A772 /* Build configuration list for PBXNativeTarget "HealthQRExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30584C0426C39CD60025A772 /* Debug */,
+				30584C0526C39CD60025A772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3081925026B0F3400022DB17 /* Build configuration list for PBXProject "kidsland" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -870,6 +1100,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3061927626BCE02F00140D41 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
 		3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
@@ -897,6 +1135,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3061927726BCE02F00140D41 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3061927626BCE02F00140D41 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		3081926926B0FB0D0022DB17 /* SwiftUIX */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */;

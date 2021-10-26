@@ -36,7 +36,7 @@ struct ScanView: View {
             else if $0.type == AVMetadataObject.ObjectType.ean13{
                 let utterance = AVSpeechUtterance(string:"\($0.value)")
                 utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
-                utterance.rate = 0.7
+                utterance.rate = 0.5
                 synthesizer.speak(utterance)
             }
             

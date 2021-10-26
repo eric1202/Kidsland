@@ -24,7 +24,7 @@ struct ContentView: View {
     @State private var isShowingDetailView = false
 
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill"]
+    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill","cross.circle.fill"]
     private var colors: [Color] = [.yellow, .purple, .green, .blue, .orange, .systemRed]
     
     var body: some View {
@@ -37,7 +37,7 @@ struct ContentView: View {
                     isActive: $isShowingDetailView) { EmptyView()
                 }
                 LazyVGrid(columns: threeColumnGrid,spacing:20) {
-                    ForEach((0...10), id: \.self) {
+                    ForEach((0..<symbols.count), id: \.self) {
                         let index = $0
                         
                         Image(systemName: symbols[$0 % symbols.count])
@@ -56,8 +56,19 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationBarTitle(timeString)
+            .onOpenURL { url in
+                print(url)
+                guard url.scheme == "widget" else { return }
+                click(index: -1)
+                
+                
+            }
             
         }
+        })
+        .onAppear(perform: {
+            
+            WifiHelper.shared.getWifiList()
         })
         .onReceive(timer) { input in
             let formatter = DateFormatter()
@@ -69,6 +80,8 @@ struct ContentView: View {
     @ViewBuilder
     func view(index:Int)-> some View{
         switch index {
+        case -1:
+            HealthImageView()
         case 1:
             EngLearnView()
         case 4:
@@ -77,6 +90,8 @@ struct ContentView: View {
             PlayerView()
         case 10:
             McdView()
+        case 11:
+            HealthImageView()
         default:
             Text("\(selectIndex) View")
         }
@@ -84,6 +99,8 @@ struct ContentView: View {
     func click(index:Int){
         selectIndex = index
         switch index {
+        case -1:
+            isShowingDetailView = true
         case 0:
             speak("录像功能")
         case 1:
@@ -115,6 +132,8 @@ struct ContentView: View {
             audioPlayer.play()
         case 10:
             isShowingDetailView = true
+        case 11:
+            isShowingDetailView = true
         default:
             print(index)
             speak("还没开发好")
@@ -128,8 +147,10 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    @State static private var linkActive = false
+//
+//    static var previews: some View {
+//        ContentView(linkActive: $linkActive)
+//    }
+//}
