@@ -123,11 +123,11 @@
 		3061927126BBE6DF00140D41 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926D26BBE6DF00140D41 /* Specification.swift */; };
 		3061927226BBE6DF00140D41 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061926E26BBE6DF00140D41 /* Product.swift */; };
 		3061927826BCE02F00140D41 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3061927726BCE02F00140D41 /* Kingfisher */; };
+		3067DC3427D5B07F00DA339E /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067DC3327D5B07F00DA339E /* PhotoListView.swift */; };
 		3081925926B0F3400022DB17 /* kidslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081925826B0F3400022DB17 /* kidslandApp.swift */; };
 		3081925B26B0F3400022DB17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081925A26B0F3400022DB17 /* ContentView.swift */; };
 		3081925D26B0F3420022DB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081925C26B0F3420022DB17 /* Assets.xcassets */; };
 		3081926026B0F3420022DB17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3081925F26B0F3420022DB17 /* Preview Assets.xcassets */; };
-		3081926A26B0FB0D0022DB17 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3081926926B0FB0D0022DB17 /* SwiftUIX */; };
 		3081926E26B0FD300022DB17 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 3081926D26B0FD300022DB17 /* CarBode */; };
 		3081927126B0FE990022DB17 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927026B0FE990022DB17 /* ScanView.swift */; };
 		3081927626B140E00022DB17 /* EngLearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081927526B140E00022DB17 /* EngLearnView.swift */; };
@@ -285,6 +285,7 @@
 		3061926C26BBE6DF00140D41 /* JSONSchemaSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchemaSupport.swift; sourceTree = "<group>"; };
 		3061926D26BBE6DF00140D41 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		3061926E26BBE6DF00140D41 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		3067DC3327D5B07F00DA339E /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
 		3081925526B0F3400022DB17 /* kidsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kidsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3081925826B0F3400022DB17 /* kidslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kidslandApp.swift; sourceTree = "<group>"; };
 		3081925A26B0F3400022DB17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -324,7 +325,6 @@
 				309C3F6526DF4ADA00F65F4A /* NetworkExtension.framework in Frameworks */,
 				3061927826BCE02F00140D41 /* Kingfisher in Frameworks */,
 				30BFB46026B29B680072DB7F /* SDWebImageSwiftUI in Frameworks */,
-				3081926A26B0FB0D0022DB17 /* SwiftUIX in Frameworks */,
 				3081926E26B0FD300022DB17 /* CarBode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,8 +345,8 @@
 		30584BF726C39CD50025A772 /* HealthQR */ = {
 			isa = PBXGroup;
 			children = (
-				30584BF826C39CD50025A772 /* HealthQR.swift */,
 				30584BFA26C39CD50025A772 /* HealthQR.intentdefinition */,
+				30584BF826C39CD50025A772 /* HealthQR.swift */,
 				30584BFB26C39CD60025A772 /* Assets.xcassets */,
 				30584BFD26C39CD60025A772 /* Info.plist */,
 			);
@@ -572,6 +572,7 @@
 				3081927826B14E4D0022DB17 /* MathLearnView.swift */,
 				3061925F26BBB16400140D41 /* McdView.swift */,
 				30584C0726C3B0EE0025A772 /* HealthImageView.swift */,
+				3067DC3327D5B07F00DA339E /* PhotoListView.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -637,7 +638,6 @@
 			);
 			name = kidsland;
 			packageProductDependencies = (
-				3081926926B0FB0D0022DB17 /* SwiftUIX */,
 				3081926D26B0FD300022DB17 /* CarBode */,
 				30BFB45F26B29B680072DB7F /* SDWebImageSwiftUI */,
 				3061927726BCE02F00140D41 /* Kingfisher */,
@@ -673,7 +673,6 @@
 			);
 			mainGroup = 3081924C26B0F3400022DB17;
 			packageReferences = (
-				3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				3081926C26B0FD300022DB17 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 				30BFB45E26B29B680072DB7F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				3061927626BCE02F00140D41 /* XCRemoteSwiftPackageReference "Kingfisher" */,
@@ -833,6 +832,7 @@
 				30584C0826C3B0EE0025A772 /* HealthImageView.swift in Sources */,
 				3081925B26B0F3400022DB17 /* ContentView.swift in Sources */,
 				3061927126BBE6DF00140D41 /* Specification.swift in Sources */,
+				3067DC3427D5B07F00DA339E /* PhotoListView.swift in Sources */,
 				30BFB46426B29B9E0072DB7F /* SwiftyJSON.swift in Sources */,
 				3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */,
 				3061927026BBE6DF00140D41 /* JSONSchemaSupport.swift in Sources */,
@@ -865,7 +865,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				DEVELOPMENT_TEAM = CXFNG98542;
 				INFOPLIST_FILE = HealthQR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -873,7 +873,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland.HealthQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kidsland.HealthQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -887,7 +887,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				DEVELOPMENT_TEAM = CXFNG98542;
 				INFOPLIST_FILE = HealthQR/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -895,7 +895,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland.HealthQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kidsland.HealthQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1028,7 +1028,7 @@
 				CODE_SIGN_ENTITLEMENTS = kidsland/kidsland.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kidsland/Preview Content\"";
-				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				DEVELOPMENT_TEAM = CXFNG98542;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kidsland/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1036,7 +1036,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kidsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1052,7 +1052,7 @@
 				CODE_SIGN_ENTITLEMENTS = kidsland/kidsland.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"kidsland/Preview Content\"";
-				DEVELOPMENT_TEAM = G4N8HPK6QU;
+				DEVELOPMENT_TEAM = CXFNG98542;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kidsland/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1060,7 +1060,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kid.kit.kidsland;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiazz.kidsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1108,14 +1108,6 @@
 				minimumVersion = 6.3.1;
 			};
 		};
-		3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.7;
-			};
-		};
 		3081926C26B0FD300022DB17 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
@@ -1139,11 +1131,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3061927626BCE02F00140D41 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		3081926926B0FB0D0022DB17 /* SwiftUIX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3081926826B0FB0D0022DB17 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
-			productName = SwiftUIX;
 		};
 		3081926D26B0FD300022DB17 /* CarBode */ = {
 			isa = XCSwiftPackageProductDependency;

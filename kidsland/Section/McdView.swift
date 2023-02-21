@@ -20,17 +20,16 @@ struct McdView: View {
             ZStack{
 
             VStack(spacing:0){
-                Image(uiImage: UIImage(named: "header-mobile-bg")!).fill(alignment: .top).frame(height: 100)
+//                Image(uiImage: UIImage(named: "header-mobile-bg")!).scaledToFit().frame(height: 100)
                 
                     ScrollView {
                         VStack{
-                            Spacer()
                             LazyVGrid(columns: columnGrid,spacing:2) {
                                 ForEach((0...imgs.count-1), id: \.self) {
                                     let index = $0
                                     let imgUrl = products[ index < products.count ? index : 0]["img"].stringValue
 
-                                    let _ = print("\(imgUrl) \n")
+//                                    let _ = print("\(imgUrl) \n")
                                     VStack(spacing:0){
 //                                        Text("\( index >= products.count ? "index" : products[index]["productName"].stringValue)").font(.largeTitle)
                                         KFImage(URL(string: imgUrl))
@@ -46,8 +45,7 @@ struct McdView: View {
                                         Spacer(minLength: 20)
                                     }
                                 }
-                                Spacer()
-                                Text("select")
+
                             }.blur(radius: isDetectingLongPress ? 5 : 0)
                             
                         }.onAppear(){
@@ -65,7 +63,7 @@ struct McdView: View {
                         .frame(width: geometry.size.width * 0.95, height: geometry.size.height * 0.95)
                         .transition(.scale)
                 }
-            }.ignoresSafeArea()
+            }
         })
         
     }
@@ -118,14 +116,14 @@ struct ImagePreview : View {
                 .aspectRatio(contentMode: .fit)
                 .onTapGesture {
                     tap.toggle()
-                }
-                .onSwipeDown {
-                    tap = false
-                }
-                .onSwipeUp {
-                    tap = false
+                }.gesture(
+                    DragGesture()
+                        .onChanged { value in
+                            print(value)
+                            tap = false
+                    }
+                )
 
-                }
 
         }
         .padding(8)

@@ -22,7 +22,7 @@ struct HealthImageView: View {
                 .onTapGesture(perform: {
                     showImagePicker.toggle()
                 })
-                .aspectRatio(contentMode: .fill).fill(alignment: .top)
+                .aspectRatio(contentMode: .fill)
                 .navigationBarHidden(true)
                 .statusBar(hidden: true).ignoresSafeArea()
         }.sheet(isPresented: $showImagePicker) {
