@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30147FB129B0377700FD0D13 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30147FB029B0377700FD0D13 /* ChatGPTView.swift */; };
 		3050199426C9FB7F00C58010 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050199326C9FB7F00C58010 /* ImagePickerView.swift */; };
 		30584BF426C39CD50025A772 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF326C39CD50025A772 /* WidgetKit.framework */; };
 		30584BF626C39CD50025A772 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF526C39CD50025A772 /* SwiftUI.framework */; };
@@ -170,6 +171,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		30147FB029B0377700FD0D13 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
 		3050199326C9FB7F00C58010 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		30584BF126C39CD50025A772 /* HealthQRExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HealthQRExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		30584BF326C39CD50025A772 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -573,6 +575,7 @@
 				3061925F26BBB16400140D41 /* McdView.swift */,
 				30584C0726C3B0EE0025A772 /* HealthImageView.swift */,
 				3067DC3327D5B07F00DA339E /* PhotoListView.swift */,
+				30147FB029B0377700FD0D13 /* ChatGPTView.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -842,6 +845,7 @@
 				309C3F6726DF4DF000F65F4A /* WIFIHelper.swift in Sources */,
 				3081927126B0FE990022DB17 /* ScanView.swift in Sources */,
 				3050199426C9FB7F00C58010 /* ImagePickerView.swift in Sources */,
+				30147FB129B0377700FD0D13 /* ChatGPTView.swift in Sources */,
 				3061926026BBB16400140D41 /* McdView.swift in Sources */,
 				3061927226BBE6DF00140D41 /* Product.swift in Sources */,
 				30584BFF26C39CD60025A772 /* HealthQR.intentdefinition in Sources */,
@@ -867,7 +871,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXFNG98542;
 				INFOPLIST_FILE = HealthQR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -889,7 +893,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CXFNG98542;
 				INFOPLIST_FILE = HealthQR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1031,7 +1035,7 @@
 				DEVELOPMENT_TEAM = CXFNG98542;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kidsland/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1055,7 +1059,7 @@
 				DEVELOPMENT_TEAM = CXFNG98542;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = kidsland/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

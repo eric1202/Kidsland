@@ -24,8 +24,8 @@ struct ContentView: View {
     @State private var isShowingDetailView = false
 
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill","cross.circle.fill","newspaper.fill"]
-    private var colors: [Color] = [.yellow, .purple, .green, .blue, .orange, .red]
+    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill","cross.circle.fill","newspaper.fill","person.fill.questionmark"]
+    private var colors: [Color] = [.yellow, .purple, .green, .blue, .orange, .red, .brown]
     
     var body: some View {
         GeometryReader(content: { geometry in
@@ -55,6 +55,11 @@ struct ContentView: View {
                 ScanView()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background{
+                LinearGradient(gradient: Gradient(colors: [Color.gray, Color.cyan]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
+
+            }
             .navigationBarTitle(timeString)
             .onOpenURL { url in
                 print(url)
@@ -94,6 +99,8 @@ struct ContentView: View {
             HealthImageView()
         case 12:
             PhotoListView()
+        case 13:
+            ChatGPTView()
         default:
             Text("\(selectIndex) View")
         }
@@ -134,7 +141,7 @@ struct ContentView: View {
             audioPlayer.play()
         case 10:
             isShowingDetailView = true
-        case 11,12:
+        case 11,12,13:
             isShowingDetailView = true
         default:
             print(index)
@@ -149,10 +156,10 @@ struct ContentView: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    @State static private var linkActive = false
-//
-//    static var previews: some View {
-//        ContentView(linkActive: $linkActive)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    @State static private var linkActive = false
+
+    static var previews: some View {
+        ContentView()
+    }
+}
