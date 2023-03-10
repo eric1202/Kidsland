@@ -84,7 +84,9 @@ struct ChatGPTView: View {
                     Text("Send")
                 }
                 .padding()
-                .buttonStyle(RoundedButtonStyle())
+//                .buttonStyle(RoundedButtonStyle())
+                .overlay(RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color.gray, lineWidth: 1))
                 .disabled(newMessage.isEmpty)
             }
             .padding()
@@ -110,7 +112,7 @@ struct ChatGPTView: View {
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
-        request.addValue("Bearer sk-", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -164,21 +166,21 @@ struct ChatGPTView: View {
     }
 }
 
-struct RoundedButtonStyle: ButtonStyle {
-    var borderColor: Color = .blue
-    var borderWidth: CGFloat = 2.0
-    var cornerRadius: CGFloat = 10.0
-    
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .padding()
-            .foregroundColor(.white)
-            .background(configuration.isPressed ? Color.blue.opacity(0.7) : Color.blue)
-            .cornerRadius(cornerRadius)
-            .overlay(RoundedRectangle(cornerRadius: cornerRadius)
-                .stroke(borderColor, lineWidth: borderWidth))
-    }
-}
+//struct RoundedButtonStyle: ButtonStyle {
+//    var borderColor: Color = .blue
+//    var borderWidth: CGFloat = 2.0
+//    var cornerRadius: CGFloat = 10.0
+//    
+//    func makeBody(configuration: Self.Configuration) -> some View {
+//        configuration.label
+//            .padding()
+//            .foregroundColor(.white)
+//            .background(configuration.isPressed ? Color.blue.opacity(0.7) : Color.blue)
+//            .cornerRadius(cornerRadius)
+//            .overlay(RoundedRectangle(cornerRadius: cornerRadius)
+//                .stroke(borderColor, lineWidth: borderWidth))
+//    }
+//}
 
 struct ChatGPTResponseInfo: Codable {
     var id, object: String?

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30147FB129B0377700FD0D13 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30147FB029B0377700FD0D13 /* ChatGPTView.swift */; };
+		30147FB329B9D69600FD0D13 /* MoYuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30147FB229B9D69600FD0D13 /* MoYuView.swift */; };
 		3050199426C9FB7F00C58010 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050199326C9FB7F00C58010 /* ImagePickerView.swift */; };
 		30584BF426C39CD50025A772 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF326C39CD50025A772 /* WidgetKit.framework */; };
 		30584BF626C39CD50025A772 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30584BF526C39CD50025A772 /* SwiftUI.framework */; };
@@ -172,6 +173,7 @@
 
 /* Begin PBXFileReference section */
 		30147FB029B0377700FD0D13 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
+		30147FB229B9D69600FD0D13 /* MoYuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoYuView.swift; sourceTree = "<group>"; };
 		3050199326C9FB7F00C58010 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		30584BF126C39CD50025A772 /* HealthQRExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HealthQRExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		30584BF326C39CD50025A772 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -576,6 +578,7 @@
 				30584C0726C3B0EE0025A772 /* HealthImageView.swift */,
 				3067DC3327D5B07F00DA339E /* PhotoListView.swift */,
 				30147FB029B0377700FD0D13 /* ChatGPTView.swift */,
+				30147FB229B9D69600FD0D13 /* MoYuView.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -832,6 +835,7 @@
 			files = (
 				30BFB45A26B29A470072DB7F /* Song.swift in Sources */,
 				3081927626B140E00022DB17 /* EngLearnView.swift in Sources */,
+				30147FB329B9D69600FD0D13 /* MoYuView.swift in Sources */,
 				30584C0826C3B0EE0025A772 /* HealthImageView.swift in Sources */,
 				3081925B26B0F3400022DB17 /* ContentView.swift in Sources */,
 				3061927126BBE6DF00140D41 /* Specification.swift in Sources */,

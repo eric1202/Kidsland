@@ -24,7 +24,7 @@ struct ContentView: View {
     @State private var isShowingDetailView = false
 
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill","cross.circle.fill","newspaper.fill","person.fill.questionmark"]
+    private var symbols = ["video.fill", "abc", "thermometer", "q.square.fill", "plus.slash.minus", "desktopcomputer", "t.bubble.fill", "tv.music.note", "mic", "plus.bubble", "leaf.fill","cross.circle.fill","newspaper.fill","person.fill.questionmark","hare"]
     private var colors: [Color] = [.yellow, .purple, .green, .blue, .orange, .red, .brown]
     
     var body: some View {
@@ -101,6 +101,8 @@ struct ContentView: View {
             PhotoListView()
         case 13:
             ChatGPTView()
+        case 14:
+            MoYuView()
         default:
             Text("\(selectIndex) View")
         }
@@ -141,7 +143,7 @@ struct ContentView: View {
             audioPlayer.play()
         case 10:
             isShowingDetailView = true
-        case 11,12,13:
+        case 11,12,13,14:
             isShowingDetailView = true
         default:
             print(index)
