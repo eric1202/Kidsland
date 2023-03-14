@@ -16,13 +16,15 @@ struct ChatMessage: Identifiable,Codable {
 
 
 struct ChatGPTView: View {
-    
+
     @State private var newMessage = ""
     @State private var messages = [
         ChatMessage(message: "Hello", isMe: false),
         ChatMessage(message: "Hi", isMe: true),
     ]
-    
+    @State private var dots = ""
+    @State private var loading = false
+
     var body: some View {
         VStack {
             ScrollView {
@@ -49,6 +51,27 @@ struct ChatGPTView: View {
                                     .textSelection(.enabled)
                                 Spacer()
                             }
+                        }
+                    }
+                    if loading{
+                        HStack{
+                            Text("Loading\(dots)")
+                                .onAppear {
+                                    let timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+                                        if dots.count < 3 {
+                                            dots += "."
+                                        } else {
+                                            dots = ""
+                                        }
+                                    }
+                                    timer.fire()
+                                }
+                                .padding()
+                                .background(Color.gray)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .textSelection(.enabled)
+                            Spacer()
                         }
                     }
                 }
@@ -86,7 +109,7 @@ struct ChatGPTView: View {
                 .padding()
 //                .buttonStyle(RoundedButtonStyle())
                 .overlay(RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.gray, lineWidth: 1))
+                    .stroke(newMessage.isEmpty ? Color.gray : Color.blue, lineWidth: 1))
                 .disabled(newMessage.isEmpty)
             }
             .padding()
@@ -107,15 +130,19 @@ struct ChatGPTView: View {
         guard !newMessage.isEmpty else { return }
         messages.append(ChatMessage(message: newMessage, isMe: true))
         
+        loading.toggle()
+        
         let params = ["model": "gpt-3.5-turbo","messages": [["role": "user", "content":newMessage]]] as [String : Any]
         let url = URL(string: "https://api.openai.com/v1/chat/completions")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
-        request.addValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        
+        request.addValue("Bearer sk", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
+            loading = false
             if let error = error {
                 print("Error fetching data: \(error.localizedDescription)")
                 return
@@ -170,7 +197,7 @@ struct ChatGPTView: View {
 //    var borderColor: Color = .blue
 //    var borderWidth: CGFloat = 2.0
 //    var cornerRadius: CGFloat = 10.0
-//    
+//
 //    func makeBody(configuration: Self.Configuration) -> some View {
 //        configuration.label
 //            .padding()
