@@ -8,7 +8,6 @@
 
 import SwiftUI
 import AVKit
-var audioPlayer: AVAudioPlayer!
 struct PlayerView: View {
     //    @Binding var musicPlayer: MPMusicPlayerController
     @State private var isPlaying = false
@@ -22,32 +21,12 @@ struct PlayerView: View {
     }
     
     func changeSong() {
-        
-        if audioPlayer != nil{
-            
-            audioPlayer.pause()
-        }
-        if self.playIndex < 0 {
-            self.playIndex = 0
-        }
-        else if self.playIndex == songQueue.count {
-            self.playIndex = 0
-        }
-        
+        AudioManager.shared.pauseMusic()
+        if self.playIndex < 0 { self.playIndex = 0 }
+        else if self.playIndex == songQueue.count { self.playIndex = 0 }
         let song = self.songQueue[self.playIndex]
-        
         title = song.name
-        do {
-            
-            let play = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: song.assetPath))
-            audioPlayer = play
-            audioPlayer.numberOfLoops = 999
-            audioPlayer.play()
-        } catch let e {
-            print(e)
-        }
-        
-        
+        AudioManager.shared.playMusic(path: song.assetPath)
     }
     
     var body: some View {
@@ -68,12 +47,11 @@ struct PlayerView: View {
             Spacer()
             HStack(spacing: 40) {
                 Button(action: {
-                    if audioPlayer.currentTime < 5 {
+                    if AudioManager.shared.musicCurrentTime < 5 {
                         self.playIndex = self.playIndex - 1
                         self.changeSong()
                     } else {
                         self.changeSong()
-                        //                            self.musicPlayer.seek(to: CMTime(value: CMTimeValue(10.8), timescale: 1000))
                     }
                 }) {
                     ZStack {
@@ -89,10 +67,10 @@ struct PlayerView: View {
                 
                 Button(action: {
                     if !self.isPlaying {
-                        audioPlayer.play()
+                        AudioManager.shared.resumeMusic()
                         self.isPlaying = true
                     } else {
-                        audioPlayer.pause()
+                        AudioManager.shared.pauseMusic()
                         self.isPlaying = false
                     }
                 }) {
@@ -125,34 +103,23 @@ struct PlayerView: View {
             }.padding()
             
         }
-        .onDisappear(){
-            audioPlayer.pause()
+        .onDisappear {
+            AudioManager.shared.pauseMusic()
             self.isPlaying = false
         }
-        .onAppear() {
-            for (i,path) in self.getAllMP3().enumerated() {
+        .onAppear {
+            for (i, path) in self.getAllMP3().enumerated() {
                 let url = URL(fileURLWithPath: path)
-                let name = url.lastPathComponent
-//                    let asset = AVPlayerItem(url: url)
-                
-                self.songQueue.append(Song.init(id: String(i), name: name, artistName: "", artworkURL: "", assetPath: path))
-
+                self.songQueue.append(Song(id: String(i), name: url.lastPathComponent, artistName: "", artworkURL: "", assetPath: path))
             }
-            
-            if self.isPlaying {
-                //                self.isPlaying = true
-            } else {
-                if audioPlayer != nil{
-                    if audioPlayer.currentTime != 0{
-                        audioPlayer.play()
-                        self.isPlaying.toggle()
-                        return
-                    }
+            if !self.isPlaying {
+                if !AudioManager.shared.isMusicNil && AudioManager.shared.musicCurrentTime != 0 {
+                    AudioManager.shared.resumeMusic()
+                    self.isPlaying = true
+                } else {
+                    self.isPlaying = true
+                    self.changeSong()
                 }
-                
-                
-                self.isPlaying.toggle()
-                self.changeSong()
             }
         }
     }

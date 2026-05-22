@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -146,6 +146,9 @@
 		30BFB47126B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46C26B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 */; };
 		30BFB47226B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */; };
 		30BFB47326B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */; };
+		C5A7B9052FC0659E009E4E3F /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7B9042FC0659E009E4E3F /* AudioManager.swift */; };
+		C5A7B9082FC065D3009E4E3F /* PoetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7B9062FC065D3009E4E3F /* PoetryView.swift */; };
+		C5A7B9092FC065D3009E4E3F /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7B9072FC065D3009E4E3F /* RecordingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,6 +315,9 @@
 		30BFB46C26B39F3C0072DB7F /* 贝瓦儿歌mp3-037 Pat a cake.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-037 Pat a cake.MP3"; sourceTree = "<group>"; };
 		30BFB46D26B39F3C0072DB7F /* 贝瓦儿歌mp3-038 Old MacDonald.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-038 Old MacDonald.MP3"; sourceTree = "<group>"; };
 		30BFB46E26B39F3C0072DB7F /* 贝瓦儿歌mp3-039 Ring around the rosy.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝瓦儿歌mp3-039 Ring around the rosy.MP3"; sourceTree = "<group>"; };
+		C5A7B9042FC0659E009E4E3F /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		C5A7B9062FC065D3009E4E3F /* PoetryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryView.swift; sourceTree = "<group>"; };
+		C5A7B9072FC065D3009E4E3F /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +569,7 @@
 		30BFB46226B29B940072DB7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C5A7B9042FC0659E009E4E3F /* AudioManager.swift */,
 				30BFB46326B29B9E0072DB7F /* SwiftyJSON.swift */,
 				3050199326C9FB7F00C58010 /* ImagePickerView.swift */,
 				309C3F6626DF4DF000F65F4A /* WIFIHelper.swift */,
@@ -573,6 +580,8 @@
 		30BFB46626B29E240072DB7F /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				C5A7B9062FC065D3009E4E3F /* PoetryView.swift */,
+				C5A7B9072FC065D3009E4E3F /* RecordingView.swift */,
 				3081927026B0FE990022DB17 /* ScanView.swift */,
 				3081927526B140E00022DB17 /* EngLearnView.swift */,
 				3081927826B14E4D0022DB17 /* MathLearnView.swift */,
@@ -846,6 +855,8 @@
 				30BFB46426B29B9E0072DB7F /* SwiftyJSON.swift in Sources */,
 				3081927926B14E4D0022DB17 /* MathLearnView.swift in Sources */,
 				3061927026BBE6DF00140D41 /* JSONSchemaSupport.swift in Sources */,
+				C5A7B9082FC065D3009E4E3F /* PoetryView.swift in Sources */,
+				C5A7B9092FC065D3009E4E3F /* RecordingView.swift in Sources */,
 				30BFB45726B29A470072DB7F /* PlayerView.swift in Sources */,
 				3061926F26BBE6DF00140D41 /* ProductSection.swift in Sources */,
 				3081925926B0F3400022DB17 /* kidslandApp.swift in Sources */,
@@ -856,6 +867,7 @@
 				30147FB129B0377700FD0D13 /* ChatGPTView.swift in Sources */,
 				3061926026BBB16400140D41 /* McdView.swift in Sources */,
 				3061927226BBE6DF00140D41 /* Product.swift in Sources */,
+				C5A7B9052FC0659E009E4E3F /* AudioManager.swift in Sources */,
 				30584BFF26C39CD60025A772 /* HealthQR.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

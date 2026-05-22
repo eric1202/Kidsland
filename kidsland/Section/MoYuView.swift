@@ -123,8 +123,8 @@ struct MoYuView: View {
                 return
             }
             
-            if let datas = response.data{
-                items = datas
+            if let datas = response.data {
+                DispatchQueue.main.async { items = datas }
             }
         }
 
